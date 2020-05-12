@@ -8,6 +8,7 @@
 | [3. swap](./09.m)  | Implement the swap opcode.  |
 | [4. add](./12.m)  | Implement the add opcode.  |
 | [5. nop](./)  | Implement the nop opcode.  |
+| **compile**  | `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`  |
 |   |   |
 ---
 > ## contact 💬
