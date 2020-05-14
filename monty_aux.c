@@ -8,8 +8,12 @@ int _isdigit(void)
 {
 	int j;
 
+	if (!(var.n))
+	{
+		return (1);
+	}
 	j = var.n[0] == '-' ? 1 : 0;
-	while (var.n[j] != '\0')
+	while (var.n[j] != 0)
 	{
 		if (var.n[j] < '0' || var.n[j] > '9')
 		{

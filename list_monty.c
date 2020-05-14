@@ -13,7 +13,7 @@ stack_t *add_dnodeint_end(stack_t **head, char *n)
 	new_node = malloc(sizeof(stack_t));
 	if (!new_node)
 	{
-		fprintf(stderr, "Error: malloc failed");
+		fprintf(stderr, "Error: malloc failed\n");
 		free(var.buff);
 		free_stack(*head);
 		fclose(var.fd);

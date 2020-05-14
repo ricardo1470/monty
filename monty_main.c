@@ -1,5 +1,5 @@
 #include "monty.h"
-var_t var = {NULL, NULL, 0};
+var_t var = {NULL, NULL, NULL};
 /**
  * main - Entry point
  * @argc: arg
@@ -41,9 +41,9 @@ int main(int argc, char *argv[])
 		}
 		/* free(var.buff); */
 	}
-	fclose(var.fd);
 	free(var.buff);
 	free_stack(stack);
+	fclose(var.fd);
 	exit(EXIT_SUCCESS);
 }
 /**

@@ -11,7 +11,7 @@ void push_init(stack_t **stack, unsigned int line_number)
 	int check_digit;
 
 	check_digit = _isdigit();
-	if (check_digit == 1)
+	if (check_digit == 1 || !(var.n))
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		free(var.buff);
