@@ -68,5 +68,6 @@ void pop_init(stack_t **stack, unsigned int line_number);
 void swap_init(stack_t **stack, unsigned int line_number);
 void add_init(stack_t **stack, unsigned int line_number);
 void sub_init(stack_t **stack, unsigned int line_number);
+void div_init(stack_t **stack, unsigned int line_number);
 
 #endif /* MONTY_H*/
