@@ -129,7 +129,7 @@ void mod_init(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	
-	mod_var = (*stack)->next->n / (*stack)->n;
+	mod_var = (*stack)->next->n % (*stack)->n;
 	pop_init(&(*stack), line_number);
 	(*stack)->n = mod_var;
 }
