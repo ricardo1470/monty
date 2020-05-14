@@ -63,5 +63,6 @@ void(*get(char *s, unsigned int l))(stack_t **stack, unsigned int line_number);
 void push_init(stack_t **stack, unsigned int line_number);
 void free_stack(stack_t *stack);
 void pall_init(stack_t **stack, unsigned int line_number);
+void pint_init(stack_t **stack, unsigned int line_number);
 
 #endif /* MONTY_H*/

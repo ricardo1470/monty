@@ -12,6 +12,7 @@ void (*get(char *s, unsigned int l))(stack_t **stack, unsigned int line_number)
 	instruction_t idx[] = {
 		{"push", push_init},
 		{"pall", pall_init},
+		{"pint", pint_init}, 
 		{NULL, NULL}
 	};
 	(void)l;
