@@ -10,16 +10,18 @@
 #include <sys/stat.h>
 
 /**
- * struct var_s
+ * struct var_s - Entry point
  * @n: integer
+ * @buff: pointer value
+ * @fd: pointer value
  * Description: none
  * for stack, queues, LIFO, FIFO Holberton project
  */
 typedef struct var_s
 {
-        FILE *fd;
-        char *buff;
-        char *n;
+	FILE *fd;
+	char *buff;
+	char *n;
 } var_t;
 
 extern var_t var;
@@ -35,9 +37,9 @@ extern var_t var;
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -50,11 +52,11 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-stack_t *add_dnodeint_end(stack_t **head,char *n);
+stack_t *add_dnodeint_end(stack_t **head, char *n);
 stack_t *add_dnodeint(stack_t **head, char *n);
 int _isdigit(void);
 void(*get(char *s, unsigned int l))(stack_t **stack, unsigned int line_number);

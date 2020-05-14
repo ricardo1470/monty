@@ -1,15 +1,16 @@
 #include "monty.h"
 
 /**
- * 
- * 
- * 
+ * push_init - Entry point
+ * @stack: pointer value
+ * @line_number: value
+ * Return: Always 0 (Success)
  */
 void push_init(stack_t **stack, unsigned int line_number)
 {
 	int check_digit;
-	check_digit = _isdigit();
 
+	check_digit = _isdigit();
 	if (check_digit == 1)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
@@ -22,8 +23,10 @@ void push_init(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * 
- * 
+ * pall_init - Entry point
+ * @stack: pointer value
+ * @line_number: value
+ * Return: Always 0 (Success)
  */
 void pall_init(stack_t **stack, unsigned int line_number)
 {
@@ -35,5 +38,4 @@ void pall_init(stack_t **stack, unsigned int line_number)
 		printf("%d\n", node_pall->n);
 		node_pall = node_pall->next;
 	}
-	
 }

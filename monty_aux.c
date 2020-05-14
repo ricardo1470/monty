@@ -1,11 +1,11 @@
 #include "monty.h"
 
 /**
- * 
- * 
+ * _isdigit - Entry point
+ * Return: Always 0 (Success)
  */
 int _isdigit(void)
-{	
+{
 	int j;
 
 	j = var.n[0] == '-' ? 1 : 0;
