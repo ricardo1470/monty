@@ -65,5 +65,6 @@ void free_stack(stack_t *stack);
 void pall_init(stack_t **stack, unsigned int line_number);
 void pint_init(stack_t **stack, unsigned int line_number);
 void pop_init(stack_t **stack, unsigned int line_number);
+void swap_init(stack_t **stack, unsigned int line_number);
 
 #endif /* MONTY_H*/

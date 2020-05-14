@@ -82,3 +82,25 @@ void pop_init(stack_t **stack, unsigned int line_number)
 	*stack = (*stack)->next;
 	free(pop_var);
 }
+
+/**
+ * swap_init - Entry point
+ * @stack: pointer value
+ * @line_number: value
+ * Return: Always 0 (Success)
+ */
+void swap_init(stack_t **stack, unsigned int line_number)
+{
+	int swap_var;
+
+	if (!(*stack) || !(*stack)->next)
+	{
+		fprintf(stderr, "L%u: can't swap, stack too short\n", line_number);
+		free(var.buff);
+		fclose(var.fd);
+		exit(EXIT_FAILURE);
+	}
+	swap_var = (*stack)->n;
+	(*stack)->n = (*stack)->next->n;
+	(*stack)->next->n = swap_var;
+}
