@@ -50,7 +50,7 @@ void pint_init(stack_t **stack, unsigned int line_number)
 {
 	if (!(*stack))
 	{
-		fprintf(stderr, "L%u: can't pint, stack empty", line_number);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", line_number);
 		free(var.buff);
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
