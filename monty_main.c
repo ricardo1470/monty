@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	{
 		cont_line++;
 		len_word = strtok(var.buff, "\t\n ");
-		if (len_word != NULL && len_word[0] != '#')
+		if (len_word != NULL && len_word[0] != '#' && strcmp(len_word, "nop"))
 		{	push_two = get(len_word, cont_line);
 			if (!push_two)
 			{	fprintf(stderr, "L%u: unknown instruction %s\n", cont_line, len_word);
