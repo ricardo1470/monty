@@ -15,6 +15,7 @@ void (*get(char *s, unsigned int l))(stack_t **stack, unsigned int line_number)
 		{"pint", pint_init},
 		{"pop", pop_init},
 		{"swap", swap_init},
+		{"add", add_init},
 		{NULL, NULL}
 	};
 	(void)l;
