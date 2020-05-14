@@ -57,3 +57,28 @@ void pint_init(stack_t **stack, unsigned int line_number)
 	}
 	printf("%d\n", (*stack)->n);
 }
+
+/**
+ * pop_init - Entry point
+ * @stack: pointer value
+ * @line_number: value
+ * Return: Always 0 (Success)
+ */
+void pop_init(stack_t **stack, unsigned int line_number)
+{
+	stack_t *pop_var = *stack;
+
+	if (!(*stack))
+	{
+		fprintf(stderr, "L%u: can't pop an empty stack\n", line_number);
+		free(var.buff);
+		fclose(var.fd);
+		exit(EXIT_FAILURE);
+	}
+	if (pop_var->next)
+	{
+		(*stack)->next->prev = NULL;
+	}
+	*stack = (*stack)->next;
+	free(pop_var);
+}
