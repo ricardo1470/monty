@@ -64,10 +64,6 @@ void rotl_init(stack_t **stack, unsigned int line_number)
 	stack_t *node_rotl = *stack;
 	(void)line_number;
 
-	if (*stack == NULL || stack == NULL)
-	{
-		return;
-	}
 	if (*stack)
 	{
 		*stack = (*stack)->next;
