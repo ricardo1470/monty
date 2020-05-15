@@ -72,7 +72,6 @@ void div_init(stack_t **stack, unsigned int line_number)
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
-	
 	div_var = (*stack)->next->n / (*stack)->n;
 	pop_init(&(*stack), line_number);
 	(*stack)->n = div_var;
@@ -96,7 +95,6 @@ void mul_init(stack_t **stack, unsigned int line_number)
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
-	
 	mul_var = (*stack)->next->n * (*stack)->n;
 	pop_init(&(*stack), line_number);
 	(*stack)->n = mul_var;
@@ -128,7 +126,6 @@ void mod_init(stack_t **stack, unsigned int line_number)
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
-	
 	mod_var = (*stack)->next->n % (*stack)->n;
 	pop_init(&(*stack), line_number);
 	(*stack)->n = mod_var;
