@@ -20,6 +20,7 @@ void (*get(char *s, unsigned int l))(stack_t **stack, unsigned int line_number)
 		{"div", div_init},
 		{"mul", mul_init},
 		{"mod", mod_init},
+		{"pchar", pchar_init},
 		{NULL, NULL}
 	};
 	(void)l;
