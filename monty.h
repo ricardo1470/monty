@@ -73,5 +73,6 @@ void mul_init(stack_t **stack, unsigned int line_number);
 void mod_init(stack_t **stack, unsigned int line_number);
 void pchar_init(stack_t **stack, unsigned int line_number);
 void pstr_init(stack_t **stack, unsigned int line_number);
+void rotl_init(stack_t **stack, unsigned int line_number);
 
 #endif /* MONTY_H*/

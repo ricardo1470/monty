@@ -52,3 +52,25 @@ void pstr_init(stack_t **stack, unsigned int line_number)
 	}
 	putchar('\n');
 }
+
+/**
+ * rotl_init - Entry point
+ * @stack: pointer value
+ * @line_number: value
+ * Return: Always 0 (Success)
+ */
+void rotl_init(stack_t **stack, unsigned int line_number)
+{
+	stack_t *node_rotl = *stack;
+	(void)line_number;
+
+	if (*stack == NULL || stack == NULL)
+	{
+		return;
+	}
+	if (*stack)
+	{
+		*stack = (*stack)->next;
+	}
+	free(node_rotl);
+}

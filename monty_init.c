@@ -22,6 +22,7 @@ void (*get(char *s, unsigned int l))(stack_t **stack, unsigned int line_number)
 		{"mod", mod_init},
 		{"pchar", pchar_init},
 		{"pstr", pstr_init},
+		{"rotl", rotl_init},
 		{NULL, NULL}
 	};
 	(void)l;
