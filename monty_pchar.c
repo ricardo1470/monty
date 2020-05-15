@@ -61,12 +61,14 @@ void pstr_init(stack_t **stack, unsigned int line_number)
  */
 void rotl_init(stack_t **stack, unsigned int line_number)
 {
-	stack_t *node_rotl = *stack;
-	(void)line_number;
+	int rotl_var;
 
+	(void)line_number;
+	
+	rotl_var = (*stack)->n;
 	if (*stack)
 	{
-		*stack = (*stack)->next;
+		add_dnode_end(stack, rotl_var);
+		pop_init(stack, line_number);
 	}
-	free(node_rotl);
 }

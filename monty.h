@@ -74,5 +74,6 @@ void mod_init(stack_t **stack, unsigned int line_number);
 void pchar_init(stack_t **stack, unsigned int line_number);
 void pstr_init(stack_t **stack, unsigned int line_number);
 void rotl_init(stack_t **stack, unsigned int line_number);
+stack_t *add_dnode_end(stack_t **head, int n);
 
 #endif /* MONTY_H*/
