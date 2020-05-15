@@ -62,9 +62,8 @@ void pstr_init(stack_t **stack, unsigned int line_number)
 void rotl_init(stack_t **stack, unsigned int line_number)
 {
 	int rotl_var;
-
 	(void)line_number;
-	
+
 	rotl_var = (*stack)->n;
 	if (*stack)
 	{
