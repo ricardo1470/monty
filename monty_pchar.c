@@ -10,18 +10,18 @@ void pchar_init(stack_t **stack, unsigned int line_number)
 {
 	int pchar_var;
 
-	if (*stack == NULL || stack == NULL)
+	if (*stack == NULL || stack == NULL || !(stack))
 	{
-		fprintf(stderr, "L%u: can't pchar, value out of range\n", line_number);
+		fprintf(stderr, "L%u: can't pchar, stack empty\n", line_number);
 		free(var.buff);
 		free_stack(*stack);
 		fclose(var.fd);
 		exit(EXIT_FAILURE);
 	}
 	pchar_var = (*stack)->n;
-	if (pchar_var > 127 || pchar_var < 0)
+	if ((pchar_var > 127 + '0') || (pchar_var < 0 + '0'))
 	{
-		fprintf(stderr, "L%u: can't pchar, stack empty\n", line_number);
+		fprintf(stderr, "L%u: can't pchar, value out of range\n", line_number);
 		free(var.buff);
 		free_stack(*stack);
 		fclose(var.fd);
