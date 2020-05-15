@@ -64,9 +64,9 @@ void rotl_init(stack_t **stack, unsigned int line_number)
 	int rotl_var;
 	(void)line_number;
 
-	rotl_var = (*stack)->n;
 	if (*stack)
 	{
+		rotl_var = (*stack)->n;
 		add_dnode_end(stack, rotl_var);
 		pop_init(stack, line_number);
 	}
