@@ -29,3 +29,26 @@ void pchar_init(stack_t **stack, unsigned int line_number)
 	}
 	printf("%c\n", pchar_var);
 }
+
+/**
+ * pstr_init - Entry point
+ * @stack: pointer value
+ * @line_number: value
+ * Return: Always 0 (Success)
+ */
+void pstr_init(stack_t **stack, unsigned int line_number)
+{
+	stack_t *node_pstr = *stack;
+	(void)line_number;
+
+	while (node_pstr && node_pstr->n != '\0')
+	{
+		if ((node_pstr->n > 127) || (node_pstr->n < 0))
+		{
+			break;
+		}
+		printf("%c", node_pstr->n);
+		node_pstr = node_pstr->next;
+	}
+	putchar('\n');
+}
