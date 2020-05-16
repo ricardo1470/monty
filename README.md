@@ -19,10 +19,10 @@
 | [13. rotl](./monty_pchar.c)  | Implement the rotl opcode.  |
 | [14. rotr](./)  | Implement the rotr opcode.  |
 | [15. stack, queue ](./)  | Implement the stack and queue opcodes.  |
-| [16. Holberton](./1000-holberton.bf)  | Write a `Brainf*ck` script that prints Holberton, followed by a new line.  |
-| [17. Add two digits](./1001-add.bf)  | Add two digits given by the user.  |
-| [18. Multiplication](./1002-mul.bf)  | Multiply two digits given by the user.  |
-| [19. Multiplication level up](./1003-mul.bf)  | Multiply two digits given by the user. and print the result, followed by a new line  |
+| [16. Holberton](./bf/1000-holberton.bf)  | Write a `Brainf*ck` script that prints Holberton, followed by a new line.  |
+| [17. Add two digits](./bf/1001-add.bf)  | Add two digits given by the user.  |
+| [18. Multiplication](./bt/1002-mul.bf)  | Multiply two digits given by the user.  |
+| [19. Multiplication level up](./bf/1003-mul.bf)  | Multiply two digits given by the user. and print the result, followed by a new line  |
 | **install brainf*ck**  | `sudo apt-get install bf`  |
 | **compile**  | `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`  |
 |   |   |
