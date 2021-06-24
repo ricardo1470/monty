@@ -1,3 +1,5 @@
+a href="url"><img src="https://www.vhv.rs/dpng/d/536-5361736_monty-python-and-the-holy-grail-logo-hd.png b" align="middle" width="100" height="80"></a>
+---
 > # 0x19. C - Pilas, Colas - LIFO, FIFO
 ---
 | **Filename** | **Description** |
