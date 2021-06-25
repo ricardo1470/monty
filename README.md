@@ -69,6 +69,13 @@ pall
 1
 ```
 
+## Example of usage bf
+
+```bf
+bf 1000-holberton.bf
+Holberton
+```
+
 ---
 | **Filename** | **Description** |
 |---|---|
