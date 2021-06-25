@@ -1,6 +1,38 @@
 <a href="image monty"><img src="https://www.vhv.rs/dpng/d/536-5361736_monty-python-and-the-holy-grail-logo-hd.png" align="middle" width="800" height="400"></a>
 ---
+
 > # 0x19. C - Pilas, Colas - LIFO, FIFO
+---
+> ## Table of Contents
+
+* [Introduction](#Introduction)
+* [Description](#description)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Compilation](#Compilation)
+---
+
+## Introduction
+The simple shell project is a collaboration between **`Victor Paz`** and **`Ricardo Camayo`**, Full Stack Software Engineering students at **`Holberton School`**, with which we can emulate the operation of a shell, which contains some of its most basic characteristics, such as : Handle `PATH`, Handle command lines with `arguments`, Must handle "`end of file`" condition
+
+## Description
+`Monty 0.98` is a scripting language that is first compiled into `Monty byte codes (Just like Python)`. It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for `Monty ByteCodes files`.
+    * `Monty byte code files`: Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode
+
+## Requirements
+monty is designed to run in the `Ubuntu 14.04 LTS` linux environment and to be compiled using the GNU compiler collection v. `gcc 4.8.4` with flags`-Wall, -Werror, -Wextra, and -pedantic.`
+
+## Installation
+Clone this repository: `"https://github.com/ricardo1470/monty"`
+   * Change directories into the repository: `cd monty`
+   * Compile: see installation instructions later
+   * Run the scripts: depending on the case you must run the script as follows: after compiling `./filename` + `test file`.
+    * for example: `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`. now we execute as follows `./monty bytecodes/00.m`
+
+## Compilation
+* Compile: ``gcc -Wall -Werror -Wextra -pedantic *.c -o monty``
+* Our main files will include your main header file (`monty.h`): `#include monty.h`
+
 ---
 | **Filename** | **Description** |
 |---|---|
@@ -26,8 +58,8 @@
 | [18. Multiplication](./bt/1002-mul.bf)  | Multiply two digits given by the user.  |
 | [19. Multiplication level up](./bf/1003-mul.bf)  | Multiply two digits given by the user. and print the result, followed by a new line  |
 | **install brainf*ck**  | `sudo apt-get install bf`  |
-| **compile**  | `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`  |
 |   |   |
+
 ---
 > ## contact 💬
 
