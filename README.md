@@ -49,7 +49,7 @@ pall$
 ```
 
 ```c
-cat bytecodes/07.m 
+cat bytecodes/07.m
 push 1
 push 2
 push 3
@@ -60,7 +60,7 @@ pop
 pall
 pop
 pall
-./monty bytecodes/07.m 
+./monty bytecodes/07.m
 3
 2
 1
