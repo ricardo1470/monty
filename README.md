@@ -23,7 +23,7 @@ Clone this repository: `"https://github.com/ricardo1470/monty"`
    * Change directories into the repository: `cd monty`
    * Compile: see installation instructions later
    * Run the scripts: depending on the case you must run the script as follows: after compiling `./filename` + `test file`.
-    * for example: `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`. now we execute as follows `./monty bytecodes/00.m`
+        * for example: `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`. now we execute as follows `./monty bytecodes/00.m`
 
 ## Compilation
 * Compile: ``gcc -Wall -Werror -Wextra -pedantic *.c -o monty``
