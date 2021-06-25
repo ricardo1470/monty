@@ -4,21 +4,25 @@
 > # 0x19. C - Pilas, Colas - LIFO, FIFO
 ---
 > ## Table of Contents
-
+---
 * [Description](#description)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Compilation](#Compilation)
+* [Example of usage](#Example_of_usage)
 ---
 
 ## Description
+---
 `Monty 0.98` is a scripting language that is first compiled into `Monty byte codes (Just like Python)`. It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for `Monty ByteCodes files`.
     * `Monty byte code files`: Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode
 
 ## Requirements
+---
 monty is designed to run in the `Ubuntu 14.04 LTS` linux environment and to be compiled using the GNU compiler collection v. `gcc 4.8.4` with flags`-Wall, -Werror, -Wextra, and -pedantic.`
 
 ## Installation
+---
 Clone this repository: `"https://github.com/ricardo1470/monty"`
    * Change directories into the repository: `cd monty`
    * Compile: see installation instructions later
@@ -26,8 +30,23 @@ Clone this repository: `"https://github.com/ricardo1470/monty"`
         * for example: `gcc -Wall -Werror -Wextra -pedantic *.c -o monty`. now we execute as follows `./monty bytecodes/00.m`
 
 ## Compilation
+---
 * Compile: ``gcc -Wall -Werror -Wextra -pedantic *.c -o monty``
 * Our main files will include your main header file (`monty.h`): `#include monty.h`
+
+## Example of usage
+---
+```c
+cat -e bytecodes/00.m
+push 1$
+push 2$
+push 3$
+pall$
+./monty bytecodes/00.m
+3
+2
+1
+```
 
 ---
 | **Filename** | **Description** |
