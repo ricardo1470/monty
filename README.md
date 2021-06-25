@@ -5,15 +5,11 @@
 ---
 > ## Table of Contents
 
-* [Introduction](#Introduction)
 * [Description](#description)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Compilation](#Compilation)
 ---
-
-## Introduction
-The simple shell project is a collaboration between **`Victor Paz`** and **`Ricardo Camayo`**, Full Stack Software Engineering students at **`Holberton School`**, with which we can emulate the operation of a shell, which contains some of its most basic characteristics, such as : Handle `PATH`, Handle command lines with `arguments`, Must handle "`end of file`" condition
 
 ## Description
 `Monty 0.98` is a scripting language that is first compiled into `Monty byte codes (Just like Python)`. It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for `Monty ByteCodes files`.
